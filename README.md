@@ -10,7 +10,7 @@ Para obtener los registros de presencia en la GAM de estos grupos biológicos, s
 
 El archivo resultante se separó en otros cinco archivos, correspondientes a cada uno de los grupos (Mammalia, Amphibia, Reptilia, Aves y Plantae).
 
-Seguidamente se presentan los comandos utilizados para generar los cinco archivos y la ubicación en donde está almacenado cada uno. En los comandos, el archivo original se denomina **mammalia-amphibia-reptilia-aves-plantae.csv**.
+Seguidamente se presentan los comandos utilizados para generar los cinco archivos y la ubicación en donde está almacenado cada uno. En los comandos, el archivo renombrado como _mammalia-amphibia-reptilia-aves-plantae.csv_ corresponde al que se descargó de GBIF.
 
 #### Registros de presencia de Mammalia
 ```terminal
