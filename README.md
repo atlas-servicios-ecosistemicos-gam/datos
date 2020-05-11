@@ -14,7 +14,7 @@ Seguidamente se presentan los comandos utilizados para generar los cinco archivo
 
 #### Registros de presencia de Mammalia
 ```terminal
-ogr2ogr -f GeoJSON mammalia.geojson mammalia-amphibia-reptilia-aves-plantae.csv -select "kingdom, scientificName" -where "class='Mammalia'" -oo X_POSSIBLE_NAMES=decimalLongitude -oo Y_POSSIBLE_NAMES=decimalLatitude
+ogr2ogr -f GeoJSON mammalia.geojson mammalia-amphibia-reptilia-aves-plantae.csv -select "order, family, genus, species, year" -where "class='Mammalia' AND taxonRank='species'" -oo X_POSSIBLE_NAMES=decimalLongitude -oo Y_POSSIBLE_NAMES=decimalLatitude
 ```
 Visualización:  
 [https://github.com/atlas-servicios-ecosistemicos-gam/datos/blob/master/biodiversidad/presencia/mammalia.geojson](https://github.com/atlas-servicios-ecosistemicos-gam/datos/blob/master/biodiversidad/presencia/mammalia.geojson)
