@@ -7,7 +7,7 @@ Los comandos GDAL realizan las conversiones a Web Mercator (EPSG:3857) y WGS84 (
 
 ### CBIMA
 ```shell
-cd datos\infraestructura-verde\cbima
+cd infraestructura-verde\cbima
 gdalwarp -t_srs EPSG:3857 -of vrt IV_CBI_RIO_MARIA_AGUILAR.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ IV_CBI_RIO_MARIA_AGUILAR_WEB.TIF
 del IV_CBI_RIO_MARIA_AGUILAR.*
 gdalwarp -t_srs EPSG:4326 -of vrt IV_CBI_RIO_MARIA_AGUILAR_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ IV_CBI_RIO_MARIA_AGUILAR.TIF
