@@ -13,6 +13,14 @@ del IV_CBI_RIO_MARIA_AGUILAR.*
 gdalwarp -t_srs EPSG:4326 -of vrt IV_CBI_RIO_MARIA_AGUILAR_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ IV_CBI_RIO_MARIA_AGUILAR.TIF
 ```
 
+### CBIRT
+```shell
+cd infraestructura-verde\cbirt
+gdalwarp -t_srs EPSG:3857 -of vrt IV_CBI_RIO_TORRES.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ IV_CBI_RIO_TORRES_WEB.TIF
+del IV_CBI_RIO_TORRES.*
+gdalwarp -t_srs EPSG:4326 -of vrt IV_CBI_RIO_TORRES_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ IV_CBI_RIO_TORRES.TIF
+```
+
 ## Biodiversidad
 
 ### Registros de presencia de especies
