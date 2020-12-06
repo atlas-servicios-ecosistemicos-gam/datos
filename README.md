@@ -37,6 +37,14 @@ del IV_LA_UNION.*
 gdalwarp -t_srs EPSG:4326 -of vrt IV_LA_UNION_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ IV_LA_UNION.TIF
 ```
 
+### Montes de Oca
+```shell
+cd infraestructura-verde\montesdeoca
+gdalwarp -t_srs EPSG:3857 -of vrt IV_MONTES_DE_OCA.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ IV_MONTES_DE_OCA_WEB.TIF
+del IV_MONTES_DE_OCA.*
+gdalwarp -t_srs EPSG:4326 -of vrt IV_MONTES_DE_OCA_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ IV_MONTES_DE_OCA.TIF
+```
+
 ## Biodiversidad
 
 ### Registros de presencia de especies
