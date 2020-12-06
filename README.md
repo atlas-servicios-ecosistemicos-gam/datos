@@ -61,6 +61,14 @@ del IV_CORREDORES_CANTONES.*
 gdalwarp -t_srs EPSG:4326 -of vrt IV_CORREDORES_CANTONES_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ IV_CORREDORES_CANTONES.TIF
 ```
 
+### Corredores
+```shell
+cd infraestructura-verde\corredores
+gdalwarp -t_srs EPSG:3857 -of vrt IV_CORREDORES.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ IV_CORREDORES_WEB.TIF
+del IV_CORREDORES.*
+gdalwarp -t_srs EPSG:4326 -of vrt IV_CORREDORES_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ IV_CORREDORES.TIF
+```
+
 ## Biodiversidad
 
 ### Registros de presencia de especies
