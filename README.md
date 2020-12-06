@@ -29,6 +29,14 @@ del IV_CURRIDABAT.*
 gdalwarp -t_srs EPSG:4326 -of vrt IV_CURRIDABAT_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ IV_CURRIDABAT.TIF
 ```
 
+### La Unión
+```shell
+cd infraestructura-verde\launion
+gdalwarp -t_srs EPSG:3857 -of vrt IV_LA_UNION.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ IV_LA_UNION_WEB.TIF
+del IV_LA_UNION.*
+gdalwarp -t_srs EPSG:4326 -of vrt IV_LA_UNION_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ IV_LA_UNION.TIF
+```
+
 ## Biodiversidad
 
 ### Registros de presencia de especies
