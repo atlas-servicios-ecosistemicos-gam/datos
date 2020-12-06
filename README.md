@@ -53,6 +53,14 @@ del IV_SAN_JOSE.*
 gdalwarp -t_srs EPSG:4326 -of vrt IV_SAN_JOSE_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ IV_SAN_JOSE.TIF
 ```
 
+### Corredores-cantones
+```shell
+cd infraestructura-verde\corredores-cantones
+gdalwarp -t_srs EPSG:3857 -of vrt IV_CORREDORES_CANTONES.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ IV_CORREDORES_CANTONES_WEB.TIF
+del IV_CORREDORES_CANTONES.*
+gdalwarp -t_srs EPSG:4326 -of vrt IV_CORREDORES_CANTONES_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ IV_CORREDORES_CANTONES.TIF
+```
+
 ## Biodiversidad
 
 ### Registros de presencia de especies
