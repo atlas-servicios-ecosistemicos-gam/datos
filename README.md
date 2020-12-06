@@ -21,6 +21,14 @@ del IV_CBI_RIO_TORRES.*
 gdalwarp -t_srs EPSG:4326 -of vrt IV_CBI_RIO_TORRES_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ IV_CBI_RIO_TORRES.TIF
 ```
 
+### Curridabat
+```shell
+cd infraestructura-verde\curridabat
+gdalwarp -t_srs EPSG:3857 -of vrt IV_CURRIDABAT.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ IV_CURRIDABAT_WEB.TIF
+del IV_CURRIDABAT.*
+gdalwarp -t_srs EPSG:4326 -of vrt IV_CURRIDABAT_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ IV_CURRIDABAT.TIF
+```
+
 ## Biodiversidad
 
 ### Registros de presencia de especies
