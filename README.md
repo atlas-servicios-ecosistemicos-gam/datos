@@ -1,10 +1,8 @@
 # Datos
-
-## Infraestructura verde
 Todos los comandos de esta sección asumen que en cada directorio está copiado el archivo en CR05/CRTM05 (EPSG:5367) disponible en el repositorio datos-fuentes-originales.
 
 Los comandos GDAL realizan las conversiones a Web Mercator (EPSG:3857) y WGS84 (EPSG:4326).
-
+## Infraestructura verde
 ### CBIMA
 ```shell
 cd infraestructura-verde\cbima
