@@ -67,6 +67,16 @@ del IV_CORREDORES.*
 gdalwarp -t_srs EPSG:4326 -of vrt IV_CORREDORES_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ IV_CORREDORES.TIF
 ```
 
+## Conectividad
+### CBIMA
+#### Bosque
+```shell
+cd conectividad\cbima\bosque
+gdalwarp -t_srs EPSG:3857 -of vrt PROBABILIDAD_CONECTIVIDAD_BOSQUE_MA.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BOSQUE_MA_WEB.TIF
+del PROBABILIDAD_CONECTIVIDAD_BOSQUE_MA.*
+gdalwarp -t_srs EPSG:4326 -of vrt PROBABILIDAD_CONECTIVIDAD_BOSQUE_MA_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BOSQUE_MA.TIF
+```
+
 ## Biodiversidad
 
 ### Registros de presencia de especies
