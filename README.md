@@ -194,6 +194,48 @@ del PROBABILIDAD_CONECTIVIDAD_OTRAS_CURRIDABAT.*
 gdalwarp -t_srs EPSG:4326 -of vrt PROBABILIDAD_CONECTIVIDAD_OTRAS_CURRIDABAT_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_OTRAS_CURRIDABAT.TIF
 ```
 
+### La Unión
+
+#### Bosque y bosque ribereño
+```shell
+cd conectividad\launion\bosque-bosque-ripario
+gdalwarp -t_srs EPSG:3857 -of vrt PROBABILIDAD_CONECTIVIDAD_BOSQUE_BRIPARIO_LA_UNION.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BOSQUE_BRIPARIO_LA_UNION_WEB.TIF
+del PROBABILIDAD_CONECTIVIDAD_BOSQUE_BRIPARIO_LA_UNION.*
+gdalwarp -t_srs EPSG:4326 -of vrt PROBABILIDAD_CONECTIVIDAD_BOSQUE_BRIPARIO_LA_UNION_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BOSQUE_BRIPARIO_LA_UNION.TIF
+```
+
+#### Bosque
+```shell
+cd conectividad\launion\bosque
+gdalwarp -t_srs EPSG:3857 -of vrt PROBABILIDAD_CONECTIVIDAD_BOSQUE_LA_UNION.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BOSQUE_LA_UNION_WEB.TIF
+del PROBABILIDAD_CONECTIVIDAD_BOSQUE_LA_UNION.*
+gdalwarp -t_srs EPSG:4326 -of vrt PROBABILIDAD_CONECTIVIDAD_BOSQUE_LA_UNION_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BOSQUE_LA_UNION.TIF
+```
+
+#### Bosque ribereño
+```shell
+cd conectividad\launion\bosque-ripario
+gdalwarp -t_srs EPSG:3857 -of vrt PROBABILIDAD_CONECTIVIDAD_BRIPARIO_LA_UNION.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BRIPARIO_LA_UNION_WEB.TIF
+del PROBABILIDAD_CONECTIVIDAD_BRIPARIO_LA_UNION.*
+gdalwarp -t_srs EPSG:4326 -of vrt PROBABILIDAD_CONECTIVIDAD_BRIPARIO_LA_UNION_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BRIPARIO_LA_UNION.TIF
+```
+
+#### Migratorias
+```shell
+cd conectividad\launion\migratorias
+gdalwarp -t_srs EPSG:3857 -of vrt PROBABILIDAD_CONECTIVIDAD_MIGRATORIAS_LA_UNION.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_MIGRATORIAS_LA_UNION_WEB.TIF
+del PROBABILIDAD_CONECTIVIDAD_MIGRATORIAS_LA_UNION.*
+gdalwarp -t_srs EPSG:4326 -of vrt PROBABILIDAD_CONECTIVIDAD_MIGRATORIAS_LA_UNION_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_MIGRATORIAS_LA_UNION.TIF
+```
+
+#### Otras
+```shell
+cd conectividad\launion\otras
+gdalwarp -t_srs EPSG:3857 -of vrt PROBABILIDAD_CONECTIVIDAD_OTRAS_LA_UNION.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_OTRAS_LA_UNION_WEB.TIF
+del PROBABILIDAD_CONECTIVIDAD_OTRAS_LA_UNION.*
+gdalwarp -t_srs EPSG:4326 -of vrt PROBABILIDAD_CONECTIVIDAD_OTRAS_LA_UNION_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_OTRAS_LA_UNION.TIF
+```
+
 ## Biodiversidad
 
 ### Registros de presencia de especies
