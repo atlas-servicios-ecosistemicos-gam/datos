@@ -110,6 +110,48 @@ del PROBABILIDAD_CONECTIVIDAD_OTRAS_MA.*
 gdalwarp -t_srs EPSG:4326 -of vrt PROBABILIDAD_CONECTIVIDAD_OTRAS_MA_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_OTRAS_MA.TIF
 ```
 
+### CBIRT
+
+#### Bosque y bosque ribereño
+```shell
+cd conectividad\cbirt\bosque-bosque-ripario
+gdalwarp -t_srs EPSG:3857 -of vrt PROBABILIDAD_CONECTIVIDAD_BOSQUE_BRIPARIO_TORRES.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BOSQUE_BRIPARIO_TORRES_WEB.TIF
+del PROBABILIDAD_CONECTIVIDAD_BOSQUE_BRIPARIO_TORRES.*
+gdalwarp -t_srs EPSG:4326 -of vrt PROBABILIDAD_CONECTIVIDAD_BOSQUE_BRIPARIO_TORRES_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BOSQUE_BRIPARIO_TORRES.TIF
+```
+
+#### Bosque
+```shell
+cd conectividad\cbirt\bosque
+gdalwarp -t_srs EPSG:3857 -of vrt ROBABILIDAD_CONECTIVIDAD_BOSQUE_TORRES.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ ROBABILIDAD_CONECTIVIDAD_BOSQUE_TORRES_WEB.TIF
+del ROBABILIDAD_CONECTIVIDAD_BOSQUE_TORRES.*
+gdalwarp -t_srs EPSG:4326 -of vrt ROBABILIDAD_CONECTIVIDAD_BOSQUE_TORRES_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ ROBABILIDAD_CONECTIVIDAD_BOSQUE_TORRES.TIF
+```
+
+#### Bosque ribereño
+```shell
+cd conectividad\cbirt\bosque-ripario
+gdalwarp -t_srs EPSG:3857 -of vrt PROBABILIDAD_CONECTIVIDAD_BRIPARIO_TORRES.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BRIPARIO_TORRES_WEB.TIF
+del PROBABILIDAD_CONECTIVIDAD_BRIPARIO_TORRES.*
+gdalwarp -t_srs EPSG:4326 -of vrt PROBABILIDAD_CONECTIVIDAD_BRIPARIO_TORRES_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BRIPARIO_TORRES.TIF
+```
+
+#### Migratorias
+```shell
+cd conectividad\cbirt\migratorias
+gdalwarp -t_srs EPSG:3857 -of vrt PROBABILIDAD_CONECTIVIDAD_MIGRATORIAS_TORRES.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_MIGRATORIAS_TORRES_WEB.TIF
+del PROBABILIDAD_CONECTIVIDAD_MIGRATORIAS_TORRES.*
+gdalwarp -t_srs EPSG:4326 -of vrt PROBABILIDAD_CONECTIVIDAD_MIGRATORIAS_TORRES_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_MIGRATORIAS_TORRES.TIF
+```
+
+#### Otras
+```shell
+cd conectividad\cbirt\otras
+gdalwarp -t_srs EPSG:3857 -of vrt PROBABILIDAD_CONECTIVIDAD_OTRAS_TORRES.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_OTRAS_TORRES_WEB.TIF
+del PROBABILIDAD_CONECTIVIDAD_OTRAS_TORRES.*
+gdalwarp -t_srs EPSG:4326 -of vrt PROBABILIDAD_CONECTIVIDAD_OTRAS_TORRES_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_OTRAS_TORRES.TIF
+```
+
 ## Biodiversidad
 
 ### Registros de presencia de especies
