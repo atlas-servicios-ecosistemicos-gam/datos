@@ -278,6 +278,48 @@ del PROBABILIDAD_CONECTIVIDAD_OTRAS_MONTES_OCA.*
 gdalwarp -t_srs EPSG:4326 -of vrt PROBABILIDAD_CONECTIVIDAD_OTRAS_MONTES_OCA_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_OTRAS_MONTES_OCA.TIF
 ```
 
+### San José
+
+#### Bosque y bosque ribereño
+```shell
+cd conectividad\sanjose\bosque-bosque-ripario
+gdalwarp -t_srs EPSG:3857 -of vrt PROBABILIDAD_CONECTIVIDAD_BOSQUE_BRIPARIO_SAN_JOSE.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BOSQUE_BRIPARIO_SAN_JOSE_WEB.TIF
+del PROBABILIDAD_CONECTIVIDAD_BOSQUE_BRIPARIO_SAN_JOSE.*
+gdalwarp -t_srs EPSG:4326 -of vrt PROBABILIDAD_CONECTIVIDAD_BOSQUE_BRIPARIO_SAN_JOSE_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BOSQUE_BRIPARIO_SAN_JOSE.TIF
+```
+
+#### Bosque
+```shell
+cd conectividad\sanjose\bosque
+gdalwarp -t_srs EPSG:3857 -of vrt PROBABILIDAD_CONECTIVIDAD_BOSQUE_SAN_JOSE.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BOSQUE_SAN_JOSE_WEB.TIF
+del PROBABILIDAD_CONECTIVIDAD_BOSQUE_SAN_JOSE.*
+gdalwarp -t_srs EPSG:4326 -of vrt PROBABILIDAD_CONECTIVIDAD_BOSQUE_SAN_JOSE_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BOSQUE_SAN_JOSE.TIF
+```
+
+#### Bosque ribereño
+```shell
+cd conectividad\sanjose\bosque-ripario
+gdalwarp -t_srs EPSG:3857 -of vrt PROBABILIDAD_CONECTIVIDAD_BRIPARIO_SAN_JOSE.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BRIPARIO_SAN_JOSE_WEB.TIF
+del PROBABILIDAD_CONECTIVIDAD_BRIPARIO_SAN_JOSE.*
+gdalwarp -t_srs EPSG:4326 -of vrt PROBABILIDAD_CONECTIVIDAD_BRIPARIO_SAN_JOSE_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BRIPARIO_SAN_JOSE.TIF
+```
+
+#### Migratorias
+```shell
+cd conectividad\sanjose\migratorias
+gdalwarp -t_srs EPSG:3857 -of vrt PROBABILIDAD_CONECTIVIDAD_MIGRATORIAS_SAN_JOSE.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_MIGRATORIAS_SAN_JOSE_WEB.TIF
+del PROBABILIDAD_CONECTIVIDAD_MIGRATORIAS_SAN_JOSE.*
+gdalwarp -t_srs EPSG:4326 -of vrt PROBABILIDAD_CONECTIVIDAD_MIGRATORIAS_SAN_JOSE_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_MIGRATORIAS_SAN_JOSE.TIF
+```
+
+#### Otras
+```shell
+cd conectividad\sanjose\otras
+gdalwarp -t_srs EPSG:3857 -of vrt PROBABILIDAD_CONECTIVIDAD_OTRAS_SAN_JOSE.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_OTRAS_SAN_JOSE_WEB.TIF
+del PROBABILIDAD_CONECTIVIDAD_OTRAS_SAN_JOSE.*
+gdalwarp -t_srs EPSG:4326 -of vrt PROBABILIDAD_CONECTIVIDAD_OTRAS_SAN_JOSE_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_OTRAS_SAN_JOSE.TIF
+```
+
 ## Biodiversidad
 
 ### Registros de presencia de especies
