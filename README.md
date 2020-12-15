@@ -236,6 +236,48 @@ del PROBABILIDAD_CONECTIVIDAD_OTRAS_LA_UNION.*
 gdalwarp -t_srs EPSG:4326 -of vrt PROBABILIDAD_CONECTIVIDAD_OTRAS_LA_UNION_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_OTRAS_LA_UNION.TIF
 ```
 
+### Montes de Oca
+
+#### Bosque y bosque ribereño
+```shell
+cd conectividad\montesdeoca\bosque-bosque-ripario
+gdalwarp -t_srs EPSG:3857 -of vrt PROBABILIDAD_CONECTIVIDAD_BOSQUE_BRIPARIO_MONTES_OCA.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BOSQUE_BRIPARIO_MONTES_OCA_WEB.TIF
+del PROBABILIDAD_CONECTIVIDAD_BOSQUE_BRIPARIO_MONTES_OCA.*
+gdalwarp -t_srs EPSG:4326 -of vrt PROBABILIDAD_CONECTIVIDAD_BOSQUE_BRIPARIO_MONTES_OCA_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BOSQUE_BRIPARIO_MONTES_OCA.TIF
+```
+
+#### Bosque
+```shell
+cd conectividad\montesdeoca\bosque
+gdalwarp -t_srs EPSG:3857 -of vrt PROBABILIDAD_CONECTIVIDAD_BOSQUE_MONTES_OCA.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BOSQUE_MONTES_OCA_WEB.TIF
+del PROBABILIDAD_CONECTIVIDAD_BOSQUE_MONTES_OCA.*
+gdalwarp -t_srs EPSG:4326 -of vrt PROBABILIDAD_CONECTIVIDAD_BOSQUE_MONTES_OCA_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BOSQUE_MONTES_OCA.TIF
+```
+
+#### Bosque ribereño
+```shell
+cd conectividad\montesdeoca\bosque-ripario
+gdalwarp -t_srs EPSG:3857 -of vrt PROBABILIDAD_CONECTIVIDAD_BRIPARIO_MONTES_OCA.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BRIPARIO_MONTES_OCA_WEB.TIF
+del PROBABILIDAD_CONECTIVIDAD_BRIPARIO_MONTES_OCA.*
+gdalwarp -t_srs EPSG:4326 -of vrt PROBABILIDAD_CONECTIVIDAD_BRIPARIO_MONTES_OCA_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BRIPARIO_MONTES_OCA.TIF
+```
+
+#### Migratorias
+```shell
+cd conectividad\montesdeoca\migratorias
+gdalwarp -t_srs EPSG:3857 -of vrt PROBABILIDAD_CONECTIVIDAD_MIGRATORIAS_MONTES_OCA.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_MIGRATORIAS_MONTES_OCA_WEB.TIF
+del PROBABILIDAD_CONECTIVIDAD_MIGRATORIAS_MONTES_OCA.*
+gdalwarp -t_srs EPSG:4326 -of vrt PROBABILIDAD_CONECTIVIDAD_MIGRATORIAS_MONTES_OCA_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_MIGRATORIAS_MONTES_OCA.TIF
+```
+
+#### Otras
+```shell
+cd conectividad\montesdeoca\otras
+gdalwarp -t_srs EPSG:3857 -of vrt PROBABILIDAD_CONECTIVIDAD_OTRAS_MONTES_OCA.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_OTRAS_MONTES_OCA_WEB.TIF
+del PROBABILIDAD_CONECTIVIDAD_OTRAS_MONTES_OCA.*
+gdalwarp -t_srs EPSG:4326 -of vrt PROBABILIDAD_CONECTIVIDAD_OTRAS_MONTES_OCA_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_OTRAS_MONTES_OCA.TIF
+```
+
 ## Biodiversidad
 
 ### Registros de presencia de especies
