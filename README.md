@@ -320,6 +320,48 @@ del PROBABILIDAD_CONECTIVIDAD_OTRAS_SAN_JOSE.*
 gdalwarp -t_srs EPSG:4326 -of vrt PROBABILIDAD_CONECTIVIDAD_OTRAS_SAN_JOSE_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_OTRAS_SAN_JOSE.TIF
 ```
 
+### Corredores
+
+#### Bosque y bosque ribereño
+```shell
+cd conectividad\corredores\bosque-bosque-ripario
+gdalwarp -t_srs EPSG:3857 -of vrt PROBABILIDAD_CONECTIVIDAD_BOSQUE_BRIPARIO_CORREDORES.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BOSQUE_BRIPARIO_CORREDORES_WEB.TIF
+del PROBABILIDAD_CONECTIVIDAD_BOSQUE_BRIPARIO_CORREDORES.*
+gdalwarp -t_srs EPSG:4326 -of vrt PROBABILIDAD_CONECTIVIDAD_BOSQUE_BRIPARIO_CORREDORES_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BOSQUE_BRIPARIO_CORREDORES.TIF
+```
+
+#### Bosque
+```shell
+cd conectividad\corredores\bosque
+gdalwarp -t_srs EPSG:3857 -of vrt PROBABILIDAD_CONECTIVIDAD_BOSQUE_CORREDORES.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BOSQUE_CORREDORES_WEB.TIF
+del PROBABILIDAD_CONECTIVIDAD_BOSQUE_CORREDORES.*
+gdalwarp -t_srs EPSG:4326 -of vrt PROBABILIDAD_CONECTIVIDAD_BOSQUE_CORREDORES_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BOSQUE_CORREDORES.TIF
+```
+
+#### Bosque ribereño
+```shell
+cd conectividad\corredores\bosque-ripario
+gdalwarp -t_srs EPSG:3857 -of vrt PROBABILIDAD_CONECTIVIDAD_BRIPARIO_CORREDORES.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BRIPARIO_CORREDORES_WEB.TIF
+del PROBABILIDAD_CONECTIVIDAD_BRIPARIO_CORREDORES.*
+gdalwarp -t_srs EPSG:4326 -of vrt PROBABILIDAD_CONECTIVIDAD_BRIPARIO_CORREDORES_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BRIPARIO_CORREDORES.TIF
+```
+
+#### Migratorias
+```shell
+cd conectividad\corredores\migratorias
+gdalwarp -t_srs EPSG:3857 -of vrt PROBABILIDAD_CONECTIVIDAD_MIGRATORIAS_CORREDORES.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_MIGRATORIAS_CORREDORES_WEB.TIF
+del PROBABILIDAD_CONECTIVIDAD_MIGRATORIAS_CORREDORES.*
+gdalwarp -t_srs EPSG:4326 -of vrt PROBABILIDAD_CONECTIVIDAD_MIGRATORIAS_CORREDORES_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_MIGRATORIAS_CORREDORES.TIF
+```
+
+#### Otras
+```shell
+cd conectividad\corredores\otras
+gdalwarp -t_srs EPSG:3857 -of vrt PROBABILIDAD_CONECTIVIDAD_OTRAS_CORREDORES.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_OTRAS_CORREDORES_WEB.TIF
+del PROBABILIDAD_CONECTIVIDAD_OTRAS_CORREDORES.*
+gdalwarp -t_srs EPSG:4326 -of vrt PROBABILIDAD_CONECTIVIDAD_OTRAS_CORREDORES_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_OTRAS_CORREDORES.TIF
+```
+
 ## Biodiversidad
 
 ### Registros de presencia de especies
