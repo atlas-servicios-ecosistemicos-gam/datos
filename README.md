@@ -68,48 +68,6 @@ gdalwarp -t_srs EPSG:4326 -of vrt IV_CORREDORES_WEB.TIF /vsistdout/ | gdal_trans
 ```
 
 ## Conectividad
-### GAM
-
-#### Bosque y bosque ribereño
-```shell
-cd conectividad\gam\bosque-bosque-ripario
-gdalwarp -t_srs EPSG:3857 -of vrt PROBABILIDAD_CONECTIVIDAD_BOSQUE_BRIPARIO.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BOSQUE_BRIPARIO_WEB.TIF
-del PROBABILIDAD_CONECTIVIDAD_BOSQUE_BRIPARIO.*
-gdalwarp -t_srs EPSG:4326 -of vrt PROBABILIDAD_CONECTIVIDAD_BOSQUE_BRIPARIO_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BOSQUE_BRIPARIO.TIF
-```
-
-#### Bosque
-```shell
-cd conectividad\gam\bosque
-gdalwarp -t_srs EPSG:3857 -of vrt PROBABILIDAD_CONECTIVIDAD_BOSQUE.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BOSQUE_WEB.TIF
-del PROBABILIDAD_CONECTIVIDAD_BOSQUE.*
-gdalwarp -t_srs EPSG:4326 -of vrt PROBABILIDAD_CONECTIVIDAD_BOSQUE_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BOSQUE_MA.TIF
-```
-
-#### Bosque ribereño
-```shell
-cd conectividad\gam\bosque-ripario
-gdalwarp -t_srs EPSG:3857 -of vrt PROBABILIDAD_CONECTIVIDAD_BRIPARIO.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BRIPARIO_WEB.TIF
-del PROBABILIDAD_CONECTIVIDAD_BRIPARIO.*
-gdalwarp -t_srs EPSG:4326 -of vrt PROBABILIDAD_CONECTIVIDAD_BRIPARIO_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_BRIPARIO.TIF
-```
-
-#### Migratorias
-```shell
-cd conectividad\gam\migratorias
-gdalwarp -t_srs EPSG:3857 -of vrt PROBABILIDAD_CONECTIVDAD_MIGRATORIAS.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVDAD_MIGRATORIAS_WEB.TIF
-del PROBABILIDAD_CONECTIVDAD_MIGRATORIAS.*
-gdalwarp -t_srs EPSG:4326 -of vrt PROBABILIDAD_CONECTIVDAD_MIGRATORIAS_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVDAD_MIGRATORIAS.TIF
-```
-
-#### Otras
-```shell
-cd conectividad\gam\otras
-gdalwarp -t_srs EPSG:3857 -of vrt PROBABILIDAD_CONECTIVIDAD_OTROS.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_OTROS_WEB.TIF
-del PROBABILIDAD_CONECTIVIDAD_OTROS.*
-gdalwarp -t_srs EPSG:4326 -of vrt PROBABILIDAD_CONECTIVIDAD_OTROS_WEB.TIF /vsistdout/ | gdal_translate -co compress=lzw  /vsistdin/ PROBABILIDAD_CONECTIVIDAD_OTROS.TIF
-```
-
 ### CBIMA
 
 #### Bosque y bosque ribereño
